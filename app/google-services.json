@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402830994093",
+    "project_id": "bitrise-demo-7b4f6",
+    "storage_bucket": "bitrise-demo-7b4f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402830994093:android:053e5e11dd6e092f4db424",
+        "android_client_info": {
+          "package_name": "com.bitrise.demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeAkWjMnd4qRPlbtPL-lUyLQNruMsUGQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
