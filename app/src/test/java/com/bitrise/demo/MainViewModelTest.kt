@@ -29,6 +29,6 @@ class MainViewModelTest {
 
         val result = viewModel.titleList.value
 
-        Assert.assertTrue(result.isEmpty())
+        Assert.assertTrue(result.isNotEmpty())
     }
 }

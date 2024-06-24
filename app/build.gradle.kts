@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.firebase)
+    alias(libs.plugins.crashlytics)
 }
 
 android {
@@ -66,6 +68,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
 
     implementation("androidx.arch.core:core-testing:2.1.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
