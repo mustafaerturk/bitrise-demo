@@ -69,6 +69,7 @@ class MainActivity : ComponentActivity() {
                         MessageList(titleState.value)
                     }
                 }
+
             }
         }
     }
