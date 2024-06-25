@@ -41,4 +41,9 @@ class MainViewModelTest {
     fun `assert always false`() = runTest {
         Assert.assertFalse(false)
     }
+
+    @Test
+    fun `assert always equal`() = runTest {
+        Assert.assertEquals(false,false)
+    }
 }
