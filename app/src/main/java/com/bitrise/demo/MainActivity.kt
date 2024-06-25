@@ -31,6 +31,7 @@ import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import bitrise.demo.GreetingProvider
 import com.bitrise.demo.domain.MainViewModel
 import com.bitrise.demo.ui.theme.MyApplicationTheme
 
@@ -48,15 +49,13 @@ class MainActivity : ComponentActivity() {
                     val titleState = viewModel.titleList.collectAsState()
                     Column {
                         Greeting(
-                            name = "Bitrise Demo",
+                            name = GreetingProvider.title(),
                             modifier = Modifier.padding(innerPadding)
                         )
 
                         Button(
                             onClick = {
                                 viewModel.fetch()
-                                throw RuntimeException("Test Crash") // Force a crash
-
                             }
                         ) {
                             Text(

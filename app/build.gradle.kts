@@ -49,6 +49,18 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    flavorDimensions += listOf("stores")
+
+    productFlavors {
+        create("google") {
+            dimension = "stores"
+        }
+
+        create("huawei") {
+            dimension = "stores"
+        }
+    }
 }
 
 dependencies {
