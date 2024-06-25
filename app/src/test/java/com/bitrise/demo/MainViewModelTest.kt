@@ -31,4 +31,9 @@ class MainViewModelTest {
 
         Assert.assertTrue(result.isNotEmpty())
     }
+
+    @Test
+    fun `assert always true`() = runTest {
+        Assert.assertTrue(true)
+    }
 }
